@@ -1,0 +1,134 @@
+字符串
+字符串常量和表达式
+s=''
+s=""
+s='''   '''
+s=r''
+s=b''
+s+x
+s*3
+s[i]
+s[i:j]
+len(s)
+'%s is a %s'%()
+'{0} is a {1}'.foramt()
+s.find()
+s.rstrip()
+s.replace()
+s.split()
+s.isdigit()
+s.lower()
+s.endwith()
+''.join()
+s.encode()
+'' in s
+s='abc\ndef\nghi'
+
+转义字符
+字符'\'以及在它后边的一个或多个字符，在最终的字符串对象中会被一个单个字符所替代，这个字符通过转义序列定义了一个二进制值。
+\newline
+\\
+\'
+\"
+\a
+\b
+\f
+\n
+\r
+\t
+\v
+\uhhhh
+\Uhhhhhhhh
+\xhh
+\ooo
+\0
+
+索引和切片
+s[开始：结束：方向步长]（+为从左向右，-为从右向左，都从【开始】进行步进）
+分片等同于用分片进行索引
+’spam'[1:3]    'spam'[slice(1,3)]
+
+字符串转换
+str() 
+int()
+repr()
+float()
+ord()
+chr()
+
+字符串方法
+
+s.capitalize()
+s.center()
+s.count()
+s.encode()
+s.endswith()
+s.expandtabs()
+s.find()
+s.foramt()
+s.index()
+s.isalnum()
+s.isalpha()
+s.isdecimal()
+s.isdigit()
+s.isidentifier()
+s.islower()
+s.isnumeric()
+s.isprintable()
+s.isspace()
+s.istitle()
+s.isupper()
+s.join()
+s.ljust()
+s.lower()
+s.lstrip()
+s.maketrans()
+s.partition()
+s.replace()
+s.rfind()
+s.rindex()
+s.rjust()
+s.rpartition()
+s.rsplit()
+s.rstrip()
+s.split()
+s.splitlines()
+s.startswith()
+s.strip()
+s.swapcase()
+s.title()
+s.translate()
+s.upper()
+s.zfill()
+
+
+''.join()     ''.split()
+
+字符串格式化表达式
+在%操作符的左侧放置一个需要进行格式化的字符串，这个字符串带有个一个或多个嵌入的转换目标，都以%开头
+在%操作符的右侧放置一个对象
+
+s 字符串
+c 字符
+d 十进制
+i 整数
+o 八进位整数
+x 十六进制整数
+f 浮点十进制
+
+基于字典的字符串格式化
+'i am a %(h)s'%{'h':'boy'}
+
+字符串格式化调用方法
+字符串对象的format方法使用主体字符串作为模板，并接受任意多个表示将要根据模板替换的值的参数。在主体字符串中，花括号通过位置（如{1}）或者关键字（{food}）指出替换目标及将要插入的参数。
+'{0} am a {1}'.format('i','boy')
+'{a} am a {b}'.format('a'='i','b'='boy')
+添加键、属性、偏移量
+'my {1[spam]} runs {0.platform}'.format(sys,{'spam':'laptop'})
+'first={0[0]},second={0[2]}'.format(['a','a','b'])
+
+添加具体格式化
+'{0:>10}'.format('ss')
+'{0:X},{1:o},{2:b}'.format(255,255,255)
+format()
+
