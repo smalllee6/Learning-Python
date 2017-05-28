@@ -1,0 +1,63 @@
+字符串
+1 序列操作（索引，切片，+，*....）
+2 类型方法
+s.find('aa'),
+s.replace('aa','ss'),
+s.split(' ')
+s.upper(),
+s.isalpha(),
+s.rstrip(),s.strip(),s.lstrip()
+'%s is a %s'%('lili','good boy')   表达式形式
+'{0} is a {1}'.format('lili','good boy')  字符串方法
+
+简明的法则：可用于多种类型的操作一般以内置函数或者表达式的形式出现，类型特定的操作一般以方法出现。
+
+r'',u'',b''
+
+列表
+2类型特定操作
+s.append()
+s.pop()
+s.insert()
+s.sort()
+s.reverse()
+
+列表解析，字典解析，集合解析
+[ord(x) for x in 'abc']
+{ord(x) for x in 'abc'}
+{ord(x):x for x in 'abc'}
+G=(ord(x) for x in 'abc')
+
+字典
+映射操作，重访嵌套 ，d.keys()，d.items()
+d.get('','')
+value=d[] if x in d else 0
+
+元祖
+2类型特定方法
+s.index()
+s.count()
+
+文件
+
+集合
+set()
+{}
+x&y
+x|y
+x-y
+
+固定精度浮点数和分数
+import decimal
+d=decimal.Decimal('3.14')  d+1
+decimal.getcontext().prec=2
+
+from fractions import Fraction
+f=Fraction(2,3)
+
+布尔值
+bool()
+
+类型
+type()
+isinstance()
