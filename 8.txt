@@ -1,0 +1,57 @@
+列表与字典
+常用列表常量与操作
+l=[]
+l=[[],]
+l=list()
+l=list(range())
+len(l)
+l1+l2
+l*3
+3 in l
+l.append()
+l.extend()
+l.insert()
+l.index()
+l.Count()
+l.sort()
+l.reverse()
+del l[]
+l.pop
+l.remove
+字典
+d={}
+d={'a':11,'b':2}
+d=dict(name='bob',age='13')
+d=dict.fromkeys(['a','b'])
+d=dict(zip(keylist,valuelist))
+d['eggs']
+d['food']['ham']
+'eggs' in d
+d.keys()
+d.values()
+d.items()
+d.get(key,default)
+d.update()
+d.pop()
+len()
+d[key]=value
+del d[key]
+list(d.keys())
+Dictionary views 
+
+字典解析
+d=dict(zip([1,2,3],[4,5,6]))
+d={k:v for (k,v) in zip([1,2,3],[4,5,6])}
+d=dict.fromkeys(['a','b','c'],0)
+d1.keys()&d2.keys()
+字典视图
+字典的keys，values，items都返回视图对象，这些对象是可迭代的，但不是列表。
+keys方法返回的视图类似于集合，并且支持常见的集合操作。
+values视图不是这样的，因为他们不是唯一的。
+items返回的（key，value）对是唯一的且可散列的（只包含不可变对象）话，也支持集合行为。
+集合的行为就像是无值的字典，无序唯一不可变。
+k=d.keys()
+k|{'x':2}
+k&{'x':2}.keys()
+d.items()|d
+d.items()|d.keys()
