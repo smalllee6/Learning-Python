@@ -1,0 +1,23 @@
+python语句
+赋值
+调用
+打印调用
+if/elif/else
+for/else
+while/else
+pass
+break
+continue
+def
+return
+yield
+global
+nonlocal
+import
+from
+class
+try/except/finally
+raise	触发异常
+assert	调试检查
+with/as	环境管理器
+del
