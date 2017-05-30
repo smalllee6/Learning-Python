@@ -1,0 +1,43 @@
+赋值、表达式和打印
+spam='spam'
+spam,ham='yum','YUM'
+[spam,ham]=['yum','YUM']
+a,b,c='spa'	序列赋值运算（右侧可以使任何可迭代的对象，而不仅限于任何序列）
+a,*b='spam'	扩展的序列解包
+spam=ham='lunch'
+spam+=42
+((a,b),c)=('sp','am')	赋值嵌套序列
+扩展的序列解包
+一个  【列表】  赋值给带星号的名称，该列表收集了序列中没有赋值给其他名称的所有项。
+如果没有剩下的内容可以匹配带星号的名称，它会赋值一个空的列表。
+如果带星号的名称自身没有编写到一个列表中，会引发错误。
+
+增强赋值语句
+x+=y	x&=y	x-=y	x|y
+x*=y	x^=y	x/=y	x>>=y
+x%=y	x<<=y	x**=y	x//=y
+对于支持原处修改的对象而言，增强形式会自动执行原处的修改运算。
+
+python3中的保留字
+False	class	finally	is	return
+None	continue	for	lambda
+try	True	def	from	nonlocal
+while	and	del	global	not
+with	as	elif	if	or
+yield	assert	else	import	pass
+break	except	in	raise
+
+命名惯例
+以单一下划线开头的变量名_x不会被from module import *语句导入
+__x__时系统定义的变量名，对解释器有特殊意义
+__x是类的本地变量
+
+表达式语句
+调用函数和方法		spam(ham) spam.ham(eggs)
+交互模式下打印值	print()	yield
+
+python中的print函数
+
+print([object,...][,sep=' '][,end='\n'][,file=sys.stdout])
+print(x,y) 	>>	import sys
+			sys.stdout.write(str(x)+' '+str(y)+'\n')
