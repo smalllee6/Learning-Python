@@ -1,0 +1,7 @@
+文档
+#注释
+dir函数
+文档字符串：__doc__
+PyDoc:help函数
+PyDoc：HTML报表
+标准手册
