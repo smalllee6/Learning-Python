@@ -1,0 +1,35 @@
+while和for循环
+一般格式
+while <test1>:
+	<statements1>
+	if <test2>:
+		break
+	if <test3>:
+		continue
+else:
+	<statements2>
+
+break 跳出最近所在的循环（跳过整个循环语句）
+continue 跳到最近所在循环的开头处（来到循环首行）
+pass 空占位语句
+else 只有当不触发break时才执行。循环else分句提供了常见的编写代码的明确语法：这是编写代码的结构，让你捕捉循环的另一条出路，而不用设置检查标志位和条件。
+
+for循环
+一般格式
+for <target> in <object>:
+	<statements>
+	if <test>:
+		break
+	if <test>:
+		continue
+else:
+	<statements>
+循环中的目标赋值遵循普通的赋值的一切原则，和普通的赋值语句同样适用。并且循环结束时赋值目标的变量名还是引用了序列中的最后一个元素，除非通过一个break语句退出了循环
+for循环中的else同while中的循环一样。
+
+编写循环的技巧
+循环计数器：while和range
+非完备遍历：range和分片
+修改列表：range
+并行遍历：zip和map
+产生偏移和元素：enumerate
