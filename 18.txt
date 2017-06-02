@@ -1,0 +1,24 @@
+参数
+参数的传递通过自动将对象赋值给本地变量名实现的
+在函数内部的参数名的赋值不会影响调用者
+改变函数的可变对象的参数的值也许会对调用者有影响
+不可变参数通过值传递
+可变对象是通过指针进行传递的
+如果不想要函数内部在原处的修改影响传给他的对象，那么，我们可以简单的创建一个明确的可变对象的拷贝
+
+参数匹配
+func(value)
+func(name=value)
+func(*sequence)
+func(**dict)
+
+细节
+函数调用中，顺序：位置参数，关键字参数，*sequence，**dict
+函数定义中，顺序：一般参数，默认参数，*name，keyword—only参数，**name
+
+keyword-only参数
+keyword-only参数编码为命名的参数，出现在参数列表*args后
+def kwonly(a,*b,c)
+def kwonly(a,*,b,c)
+keyword-only参数定义的时候必须在*后，**前。
+keyword-only参数调用的时候必须在**前，或者在**之中。
